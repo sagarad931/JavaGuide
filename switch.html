@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+    <title>Comments</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            background-color: #f1f1f1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 3px;
+        }
+
+        .code {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Switch Case In Java -->
+    <h3>Switch Case In Java</h3>
+    <p>
+        Switch case is used to execute the code block based on the condition.
+    </p>
+    <!-- Switch Case Syntax -->
+    <h3>Switch Case Syntax</h3>
+  
+    <div class="code">
+        <pre>
+             <code class="language-java">
+                // Switch case is used to execute the code block based on the condition.
+                switch(expression) {
+                    case value1:
+                        statement1;
+                        break;
+                    case value2:
+                        statement2;
+                        break;
+                    case value3:
+                        statement3;
+                        break;
+                    default:
+                        statement4;
+                }
+            </code>
+        </pre>
+    </div>
+    <h3>Example of Switch Case</h3>
+    <div class="code">
+        <pre>
+             <code class="language-java">
+                int noOfDays = 2;
+                switch (noOfDays){
+                    case 1:
+                        System.out.println("The day is sunday.");
+                        break;
+                    case 2:
+                        System.out.println("The day is monday.");
+                        break;
+                    case 3:
+                        System.out.println("The day is tue.");
+                        break;
+                    default:
+                        System.out.println("Invalid option given");
+            </code>
+        </pre>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+
+</html>
