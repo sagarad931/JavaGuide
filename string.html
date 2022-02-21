@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+    <title>Strings</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            background-color: #f1f1f1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 3px;
+        }
+
+        .code {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+  <!-- String in Java -->
+    <h3>String in Java</h3>
+    <p>
+        A string is a sequence of characters. It is used to store textual data.
+    </p>
+    <h3>Types of Strings</h3>
+    <ul>
+        <li><b>String Literal</b>: A string literal is a sequence of characters enclosed in double quotes. It is used to store textual data.</li>
+        <li><b>String Object</b>: A string object is an object of the java.lang.String class. It is used to store textual data.</li>
+    </ul>
+    <div class="code">
+        <pre>
+          <code class="language-java">
+            // String Literal
+            String str = "Hello World";
+
+            // String Object
+            String str1 = new String("Hello World");
+         </code>
+        </pre>
+    </div>
+  
+    <h3>Methods of String</h3>
+    <ul>
+        <li><b>charAt()</b>: It is used to get a character at specified index.</li>
+        <li><b>concat()</b>: It is used to concatenate strings.</li>
+        <li><b>equals()</b>: It is used to check if two strings are equal or not.</li>
+        <li><b>length()</b>: It is used to get the length of a string.</li>
+        <li><b>replace()</b>: It is used to replace a string with another string.</li>
+        <li><b>substring()</b>: It is used to get a substring from a string.</li>
+    </ul>
+   <!-- String Method in Java With Example -->
+   <h3>String Methods Example In Java</h3>
+    <div class="code">
+         <pre>
+           <code class="language-java">
+                // String Literal
+                String str = "Hello World";
+    
+                // String Object
+                String str1 = new String("Hello World");
+    
+                // charAt()
+                System.out.println(str.charAt(0));
+    
+                // concat()
+                System.out.println(str.concat(" ").concat("Java"));
+    
+                // equals()
+                System.out.println(str.equals(str1));
+    
+                // length()
+                System.out.println(str.length());
+    
+                // replace()
+                System.out.println(str.replace("World", "Java"));
+    
+                // substring()
+                System.out.println(str.substring(0, 5));
+          </code>
+         </pre>
+    </div>
+    <h3>String Methods Example In Java Output</h3>
+    <div class="code">
+         <pre>
+           <code class="language-java">
+                // String Literal
+                Hello
+    
+                // String Object
+                Hello World
+    
+                // charAt()
+                H
+    
+                // concat()
+                Hello World
+    
+                // equals()
+                true
+    
+                // length()
+                11
+    
+                // replace()
+                Hello Java
+    
+                // substring()
+                Hello
+          </code>
+         </pre>
+
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"></script>
+         <script>hljs.highlightAll();</script>
+</body>
+
+</html>
