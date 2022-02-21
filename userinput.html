@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            background-color: #f1f1f1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 3px;
+        }
+
+        .code {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>User Input</h3>
+    <p>
+        If you want to take input from the user, you can use the Scanner class.
+       
+    </p>
+   
+    <h3>Integer User Input</h3>
+    <div class="code">
+        <pre>
+          <code class="language-java">
+            package com.company;
+            // Scanner: It is used to take input from user.
+            import java.util.Scanner;
+            public class UserInput {
+                public static void main(String[] args) {
+                    Scanner sc = new Scanner(System.in);
+            
+                    System.out.println("Enter Number: ");
+                    int num = sc.nextInt();
+            
+                    System.out.println("The number you typed is "+num);
+                }
+            }            
+         </code>
+     </pre>
+    </div>
+    
+    <h3>String User Input</h3>
+    <div class="code">
+        <pre>
+          <code class="language-java">
+            package com.company;
+            // Scanner: It is used to take input from user.
+            import java.util.Scanner;
+            public class UserInput {
+                public static void main(String[] args) {
+                    Scanner sc = new Scanner(System.in);
+            
+                    System.out.println("Enter Name: ");
+                    String name = sc.nextLine();
+            
+                    System.out.println("The name you typed is "+name);
+                }
+            }
+                        
+         </code>
+     </pre>
+    </div>
+
+    <h3>Floating Point User Input</h3>
+    <div class="code">
+        <pre>
+          <code class="language-java">
+            package com.company;
+            // Scanner: It is used to take input from user.
+            import java.util.Scanner;
+            public class UserInput {
+                public static void main(String[] args) {
+                    Scanner sc = new Scanner(System.in);
+            
+                    System.out.println("Enter Number: ");
+                    double number = sc.nextDouble();
+            
+                    System.out.println("The number you typed is "+number);
+                }
+            }
+            
+         </code>
+     </pre>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"></script>
+    <script>hljs.highlightAll();</script>
+
+</body>
+
+</html>
