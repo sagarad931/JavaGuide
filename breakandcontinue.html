@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+    <title>Break and Continue</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            background-color: #f1f1f1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 3px;
+        }
+
+        .code {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Break Statement</h3>
+    <p>
+        The break statement is used to exit a loop or switch statement. It stops the loop immediately, and the control of the program moves outside loop.
+    </p>
+    
+    <div class="code">
+        <pre>
+          <code class="language-java">
+            for(int i=1; i&lt;=100; i++){
+                if(i==5){
+                    break;
+                }
+                System.out.println(i);
+            }
+         </code>
+     </pre>
+    </div>
+    <pre>It will print 1 to 4.</pre>
+
+    <h3>Continue Statement</h3>
+    <p>
+        The continue statement skips the current iteration of a loop . It will bypass the statement of the loop.
+    </p>
+    <div class="code">
+        <pre>
+          <code class="language-java">
+            for(int i=1; i&lt;=100; i++){
+                if(i==5){
+                    continue;
+                }
+                System.out.println(i);
+            }
+         </code>
+     </pre>
+    </div>
+    <pre>It will print 1 to 100 but not 5.</pre>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+
+</html>

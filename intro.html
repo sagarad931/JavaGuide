@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+    <title>Introduction</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            background-color: #f1f1f1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 3px;
+        }
+        .code {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>What is Programming</h3>
+    <p>
+        Programming is the process of giving instructions to machines. The person who is involved in programming is a programmer.
+    </p>
+
+    <h3>Programming Language</h3>
+    <p>Like we understand English, Hindi, Nepali. Computer understand programming language to perform task. Here are some popular programming languages:</p>
+    <ul>
+        <li>Java</li>
+        <li>Javascript</li>
+        <li>Python</li>
+        <li>Php</li>
+        <li>C# [C Sharp]</li>
+        <li>C</li>
+        <li>C++</li>
+    </ul>
+
+    <pre>Note: The main purpose of any programming language is to solve a certain problem.</pre>
+
+
+    <h3>Java</h3>
+    <p>Java is high-level, object-oriented, general-purpose programming language it runs on different platforms i.e. Windows, Linux, Mac, etc. It let programmers write once, run anywhere.</p>
+    <h3>Some Features</h3>
+    <ul>
+        <li>Used to make mobile apps, web apps, desktops apps.</li>
+        <li>Huge Community Support.</li>
+        <li>Fast & Secure.</li>
+        <li>It is case-sensitive. [A and a has different meanings]</li>
+        <li>Used in QA Automation.</li>
+        <li>It is open-source and free.</li>
+    </ul>
+
+    <h3>How to Download and Install Java Intellij</h3>
+    <p>You can download software like Intellij or Eclipse to run java on your computer. In this tutorial we use IntelliJ.
+    </p>
+
+    <ul>
+        <li>Go to jetbrains.com/idea/download/</li>
+        <li>Download Community Edition</li>
+        <li>Install It</li>
+        <li>Open Intellij and Create Project</li>
+    </ul>
+
+    <h3>Basic Java Program</h3>
+
+    <div class="code">
+        <pre>
+        <code class="language-java">
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+          </code>
+     </pre>
+    </div>
+
+    <h3>Basic Java Program Explained</h3>
+    <ul>
+        <li>Every line of code that runs in Java must be inside a class i.e Main.</li>
+        <li>A class should always start with an uppercase first letter.</li>
+        <li>The name of the java file must match the class name.</li>
+        <li>public static void main(String[] args) means main function. Our program starts with main function.</li>
+        <li>System.out.println("Hello World"); prints Hello World on Screen.</li>
+        <li>The curly braces {} marks the beginning and the end of a block of code.</li>
+        <li>Each code statement must end with a semicolon.</li>
+    </ul>
+
+    <h3>Work 1: Write a program to print your name in Java.</h3>
+
+    <h3>Basic Java Program For Basic Calculation</h3>
+    <p>Performing addition, subtraction, multiplication, division calculation in java.</p>
+
+    <div class="code">
+        <pre>
+        <code class="language-java">
+public class Work {
+    public static void main(String[] args) {
+        System.out.println("This is my first java program");
+        int num1 = 10;
+        int num2 = 20;
+
+        int sum = num1 + num2;
+        int diff = num1- num2;
+        int mul = num1 * num2;
+        int div = num1 / num2;
+
+        System.out.println("The sum is "+sum);
+        System.out.println("The diff "+diff);
+        System.out.println("The mul is "+mul);
+        System.out.println("The div is "+div);
+    }
+}
+          </code>
+     </pre>
+    </div>
+    <h3>Work 2: Write a program in JAVA that finds simple interest. Formula= p * t * r / 100.</h3>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+
+</html>

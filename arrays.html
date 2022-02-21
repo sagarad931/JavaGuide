@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+    <title>Arrays</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            background-color: #f1f1f1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 3px;
+        }
+
+        .code {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Arrays</h3>
+    <p>
+        Arrays are the collection of similar types of data. They are used to store multiple values in a single variable.
+
+       
+<h3>To Declare Array we define variables types with square bracket.</h3>
+<h4>Syntax</h4>
+    <div class="code">
+        <pre>
+            <code class="language-java">
+             // Array Syntax
+            datatype[] arrayname;
+         </code>
+     </pre>
+    </div>
+    
+
+    <h4>Example</h4>
+    <div class="code">
+        <pre>
+            <code class="language-java">
+             // Array Example
+             String []  names = {"Anar Singh Basnet", "Rama Aryal", "Rachana", "Ram Adhikari", "Munu"};
+             int [] grades = {50,60,70,80,90};
+         </code>
+     </pre>
+    </div>
+    
+    <h3>How to Access the Element of Array</h3>
+    <p>You can use an array index to access the element of an array.</p>
+    <pre>Note: An Array index always start with 0.  That means, the first element of an array is at index 0.</pre>
+    <h4>Example</h4>
+    <div class="code">
+        <pre>
+            <code class="language-java">
+             class Main {
+                public static void main(String[] args) {
+                 
+                  // create an array
+                  String []  names = {"Anar", "Rama", "Rachana", "Ram", "Munu"};
+               
+                  // accessing each array elements
+                  System.out.println("Name at index 0 "+ names[0]);
+                  System.out.println("Name at index 1 "+ names[1]);
+                  System.out.println("Name at index 2 "+ names[2]);
+                  System.out.println("Name at index 3 "+ names[3]);
+                  System.out.println("Name at index 4 "+ names[4]);
+                }
+               }
+         </code>
+     </pre>
+    </div>
+<h3>Change Array Element</h3>
+<p>You can change the value of array element by using array index.</p>
+<h4>Example</h4>
+    <div class="code">
+        <pre>
+            <code class="language-java">
+             // Array Example
+             String []  names = {"Anar", "Rama", "Rachana", "Ram", "Munu"};
+             names[0] = "Hari Sharma" // It will change Anar Singh Basnet to Hari Sharma
+             System.out.println("Name at index 0 "+ names[0]);
+         </code>
+     </pre>
+    </div>
+    <h3>Find Length of Array</h3>
+    <p>You can find the length of array by using <b>length</b> method.</p>
+    <h4>Example</h4>
+    <div class="code">
+        <pre>
+            <code class="language-java">
+             // Array Example
+             String []  names = {"Anar", "Rama", "Rachana", "Ram", "Munu"};
+             names[0] = "Hari Sharma" // It will change Anar Singh Basnet to Hari Sharma
+             System.out.println(names.length); // output will be 5
+         </code>
+     </pre>
+    </div>
+    <h3>Loop Through Array</h3>
+    <p>You can also loop through each element of the array. You can use for loop and length propoperty to specify how many times the loop will runs.  </p>
+    <div class="code">
+        <pre>
+            <code class="language-java">
+                  // create an array
+                  String []  names = {"Anar", "Rama", "Rachana", "Ram", "Munu"};
+               
+                  // looping each array elements
+                  for(int i = 0; i&lt; names.length; i++){
+                    System.out.println("Name at index "+ i +" "+ names[i]);
+                  }
+         </code>
+     </pre>
+    </div>
+    <h3>Using Foreach</h3>
+    <p>There is also foreach loop, that is used exclusively to loop through elements in arrays.</p>
+    <h4>Example</h4>
+    <div class="code">
+        <pre>
+            <code class="language-java">
+             // Array Example
+             String []  names = {"Anar", "Rama", "Rachana", "Ram", "Munu"};
+             for(String name: names){
+                System.out.println("Name "+ name);
+             }
+         </code>
+     </pre>
+    </div>
+    
+    <h4>Example: Find sum and avergage of array element</h4>
+    <div class="code">
+        <pre>
+            <code class="language-java">
+            int[] numbers = {1, 2, 5, 100, 9};
+            int total = 0;
+            Double avg;
+            
+            // access all elements using for each loop
+            // add each element in total
+            for (int number: numbers) {
+              total += number;
+            }
+           
+            // get the total number of elements
+            int arrayLength = numbers.length;
+         
+            // calculate the avg
+            // convert the avg from int to double
+            avg =  ((double)total / (double)arrayLength);
+         
+            System.out.println("Total is = " + total);
+            System.out.println("Average is = " + avg);
+         </code>
+     </pre>
+    </div>
+    <script src="https:https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

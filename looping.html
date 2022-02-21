@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+    <title>Looping</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            background-color: #f1f1f1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 3px;
+        }
+
+        .code {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Looping</h3>
+    <p>In Programming looping are used to repeat the block of the code. For e.g if you want to print your name 100 times then you can use loop. It will saves your time.</p>
+    <p>Types of Loop</p>
+    <ul>
+        <li><b>For Loop</b></li>
+        <li><b>While Loop</b></li>
+        <li><b>Do While Loop</b></li>
+    </ul>
+        
+
+    <h3>For Loop</h3>
+    <h4>Syntax</h4>
+    <div class="code">
+        <pre>
+          <code class="language-java">
+            for(initialization; condition; increment/decrement){
+            statement1;
+            statement2;
+            statement3;
+            statement...n;
+            }
+           
+         </code>
+     </pre>
+    </div>
+    
+    <h4>Example to Print 1 to 100 Using For Loop</h4>
+    <div class="code">
+        <pre>
+          <code class="language-java">
+            for(int i=1; i&lt;=100; i++){
+                System.out.println(i);
+                }
+           
+         </code>
+     </pre>
+    </div>
+    <h4>Example to Print 100 to 1 Using For Loop</h4>
+    <div class="code">
+        <pre>
+          <code class="language-java">
+            for(int i=100; i&gt;=1; i--){
+                System.out.println(i);
+                }
+           
+         </code>
+     </pre>
+    </div>
+<!-- While Loop -->
+<h3>While Loop</h3>
+    <h4>Syntax</h4>
+    <div class="code">
+        <pre>
+          <code class="language-java">
+            while(condition){
+                statement1;
+                statement2;
+                statement3;
+                statement...n;
+               }
+         </code>
+     </pre>
+    </div>
+    
+    <h4>Example to Print 1 to 100 Using While Loop</h4>
+    <div class="code">
+        <pre>
+          <code class="language-java">
+            int i =1;
+            while(i&lt;=100){
+                System.out.println(i);
+            i++;
+            }
+           
+         </code>
+     </pre>
+    </div>
+    <h4>Example to Print 100 to 1 Using While Loop</h4>
+    <div class="code">
+        <pre>
+          <code class="language-java">
+            int i =10;
+            while(i&gt;=1){
+                System.out.println(i);
+            i--;
+            }
+         </code>
+     </pre>
+    </div>
+<!-- End While Loop -->
+<!-- Do While Loop -->
+<h3>Do While Loop</h3>
+    <h4>Syntax</h4>
+    <div class="code">
+        <pre>
+          <code class="language-java">
+            do{
+                statement1;
+                statement2;
+                statement3;
+                statement...n;
+            }while(condition);
+         </code>
+     </pre>
+    </div>
+    
+    <h4>Example to Print 1 to 100 Using Do While Loop</h4>
+    <div class="code">
+        <pre>
+          <code class="language-java">
+            int i =1;
+            do{
+                System.out.println(i);
+            i++;
+            }while(i&lt;=100);
+         </code>
+     </pre>
+    </div>
+    <h4>Example to Print 100 to 1 Using Do While Loop</h4>
+    <div class="code">
+        <pre>
+          <code class="language-java">
+            int i =10;
+            do{
+                System.out.println(i);
+            i--;
+            }while(i&gt;=1);
+         </code>
+     </pre>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+
+</html>

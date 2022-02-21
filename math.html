@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+    <title>Comments</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            background-color: #f1f1f1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 3px;
+        }
+
+        .code {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+<h3>Math in Java</h3>
+<p>
+    Math is used to perform mathematical operations.
+</p>
+<!-- Math Syntax -->
+<h3>Math Syntax</h3>
+<p>Math is used to perform mathematical operations.</p>
+<div class="code">
+    <pre>
+         <code class="language-java">
+            => Math.abs(x)
+            => Math.ceil(x)
+            => Math.floor(x)
+            => Math.round(x)
+            => Math.max(x, y)
+            => Math.min(x, y)
+            => Math.pow(x, y)
+            => Math.sqrt(x)
+            => Math.random()
+        </code>
+    </pre>
+</div>
+<!-- Math Examples -->
+<h3>Math Examples</h3>
+<table>
+    <tr>
+        <th>Method</th>
+        <th>Description</th>
+        <th>Example</th>
+    </tr>
+    <tr>
+        <td>Math.abs(x)</td>
+        <td>Returns the absolute value of the given number.</td>
+        <td>Math.abs(-5) = 5</td>
+    </tr>
+    <tr>
+        <td>Math.ceil(x)</td>
+        <td>Returns the smallest integer greater than or equal to the given number.</td>
+        <td>Math.ceil(4.4) = 5</td>
+    </tr>
+    <tr>
+        <td>Math.floor(x)</td>
+        <td>Returns the largest integer less than or equal to the given number.</td>
+        <td>Math.floor(4.4) = 4</td>
+    </tr>
+    <tr>
+        <td>Math.round(x)</td>
+        <td>Returns the nearest integer to the given number.</td>
+        <td>Math.round(4.4) = 4</td>
+    </tr>
+    <tr>
+        <td>Math.max(x, y)</td>
+        <td>Returns the largest of the two given numbers.</td>
+        <td>Math.max(4, 5) = 5</td>
+    </tr>
+    <tr>
+        <td>Math.min(x, y)</td>
+        <td>Returns the smallest of the two given numbers.</td>
+        <td>Math.min(4, 5) = 4</td>
+    </tr>
+    <tr>
+        <td>Math.pow(x, y)</td>
+        <td>Returns the x to the power of y.</td>
+        <td>Math.pow(4, 2) = 16</td>
+    </tr>
+    <tr>
+        <td>Math.sqrt(x)</td>
+        <td>Returns the square root of the given number.</td>
+        <td>Math.sqrt(16) = 4</td>
+    </tr>
+    <tr>
+        <td>Math.random()</td>
+        <td>Returns a random number between 0 and 1.</td>
+        <td>Math.random() = 0.9</td>
+    </tr>
+</table>
+
+<h3>Code Example Java Math</h3>
+<div class="code">
+    <pre>
+         <code class="language-java">
+            public class MathExample {
+
+                public static void main(String[] args) {
+                   System.out.println("Absolute value of -5 is " + Math.abs(-5));
+                    System.out.println("Ceiling of 4.4 is " + Math.ceil(4.4));
+                    System.out.println("Floor of 4.4 is " + Math.floor(4.4));
+                    System.out.println("Round of 4.4 is " + Math.round(4.4));
+                    System.out.println("Max of 4 and 5 is " + Math.max(4, 5));
+                    System.out.println("Min of 4 and 5 is " + Math.min(4, 5));
+                    System.out.println("4 to the power of 2 is " + Math.pow(4, 2));
+                    System.out.println("Square root of 16 is " + Math.sqrt(16));
+                    System.out.println("Random number is " + Math.random());
+                }
+            }
+        </code>
+    </pre>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+
+</html>
