@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+    <title> Variables</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            background-color: #f1f1f1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 3px;
+        }
+
+        .code {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Variables</h3>
+    <p>Variables are container used to store value in program. There are different types of variables where we can store
+        different types of values.</p>
+
+    <div class="code">
+        <pre>
+          <code class="language-java">
+            E.g 
+            int a = 10;
+            String name = "Bimal";
+            // here a and name are variables.
+         </code>
+     </pre>
+    </div>
+    <h3>Types of Variables:</h3>
+    <ul>
+        <li><b>String</b>: For storing text values. E.g. "Ram" [Must be in double quotes]</li>
+        <li><b>int</b>: For storing integer value. [Decimal is not included] e.g. 10, -10, 8555</li>
+        <li><b>float</b>: For storing floating point value. [Decimal is included] e.g. 10.0, -10.2, 85.698</li>
+        <li><b>char</b>: For storing single character. E.g. 'A', 'a', 'z' [Must be in single quotes] </li>
+        <li><b>boolean </b>: For storing true or false value.</li>
+    </ul>
+
+    <h3>How to Declare Variables: [Syntax]</h3>
+    <p>type variableName = value;</p>
+    <hr>
+    <p>E.g: String address = "USA"; <br>
+        System.out.println(address);</p>
+
+    <p>E.g: int num1 = 10; <br>
+        System.out.println(num1);</p>
+
+    <p>E.g: float price = 1008.52; <br>
+        System.out.println(price);</p>
+
+    <p>E.g: char gender = 'M'; <br>
+        System.out.println(gender);</p>
+
+    <p>E.g: boolean isMarried = false; <br>
+        System.out.println(isMarried);</p>
+     <code class="language-java">Always use descriptive variable name. Dont use a, b, c because this will make your code more complex.</code>
+
+    <h3>Variables [Rules in Java]</h3>
+
+    <ul>
+        <li>Declare type first. e.g int i =1;</li>
+        <li>Variable name should not be start with number.</li>
+        <li>Variable name should not be keywords. [already defined words]</li>
+        <li>Variable name should not contain space.</li>
+        <li>Variables names are case sensitive.</li>
+    </ul>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+
+</html>
